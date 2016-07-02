@@ -79,7 +79,7 @@ runuser -l $SUDOUSER -c "git --git-dir="/home/$SUDOUSER/openshift-ansible/.git" 
 
 echo "Executing Ansible playbook"
 
-runuser -l $SUDOUSER -c "ansible-playbook openshift-ansible/playbooks/byo/config.yml"
+runuser -l $SUDOUSER -c "ansible-playbook openshift-ansible/playbooks/byo/config.yml -vvvv"
 
 echo "Modifying sudoers"
 
