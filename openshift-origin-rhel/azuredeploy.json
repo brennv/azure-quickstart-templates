@@ -134,11 +134,11 @@
 		},
 		"imageReference": "[variables('osType')]",
 		"sshKeyPath": "[concat('/home/', parameters('adminUsername'), '/.ssh/authorized_keys')]",
-		"nodePrepScriptUrl": "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/openshift-origin-rhel/scripts/nodePrep.sh",
-		"masterPrepScriptUrl": "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/openshift-origin-rhel/scripts/masterPrep.sh",
+		"nodePrepScriptUrl": "https://raw.githubusercontent.com/brennv/azure-quickstart-templates/master/openshift-origin-rhel/scripts/nodePrep.sh",
+		"masterPrepScriptUrl": "https://raw.githubusercontent.com/brennv/azure-quickstart-templates/master/openshift-origin-rhel/scripts/masterPrep.sh",
 		"nodePrepScriptFileName": "nodePrep.sh",
 		"masterPrepScriptFileName": "masterPrep.sh",
-		"openshiftDeploymentTemplateUrl": "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/openshift-origin-rhel/nested/openshiftdeploy.json",
+		"openshiftDeploymentTemplateUrl": "https://raw.githubusercontent.com/brennv/azure-quickstart-templates/master/openshift-origin-rhel/nested/openshiftdeploy.json",
 		"vmSizesMap": {
 			"Standard_A4": {
 				"storageAccountType": "Standard_LRS"

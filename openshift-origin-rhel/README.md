@@ -1,7 +1,7 @@
 # OpenShift Origin with Azure Active Directory
 
-<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-quickstart-templates%2Fmaster%2Fopenshift-origin-rhel%2Fazuredeploy.json" target="_blank"><img src="http://azuredeploy.net/deploybutton.png"/></a>
-<a href="http://armviz.io/#/?load=https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-quickstart-templates%2Fmaster%2Fopenshift-origin-rhel%2Fazuredeploy.json" target="_blank">
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fbrennv%2Fazure-quickstart-templates%2Fmaster%2Fopenshift-origin-rhel%2Fazuredeploy.json" target="_blank"><img src="http://azuredeploy.net/deploybutton.png"/></a>
+<a href="http://armviz.io/#/?load=https%3A%2F%2Fraw.githubusercontent.com%2Fbrennv%2Fazure-quickstart-templates%2Fmaster%2Fopenshift-origin-rhel%2Fazuredeploy.json" target="_blank">
     <img src="http://armviz.io/visualizebutton.png"/>
 </a>
 
@@ -36,7 +36,7 @@ You will need to create a Key Vault to store your SSH Private Key that will then
   b.  Create Key Vault: azure keyvault create -u \<vault-name\> -g \<resource-group\> -l \<location\> [azure keyvault create -u KeyVaultName -g ResourceGroupName -l 'East US'] <br/>
   c.  Create Secret: azure keyvault secret set -u \<vault-name\> -s \<secret-name\> -w \<secret-value\> [azure keyvault secret set -u KeyVaultName -s SecretName -w <Paste private key here>] <br/>
      1. Do not include the first line "-----BEGIN RSA PRIVATE KEY-----" and the last line "-----END RSA PRIVATE KEY-----" <br/>
-   
+
 ### azuredeploy.Parameters.json File Explained
 
 1.  masterVmSize: Select from one of the allowed VM sizes listed in the azuredeploy.json file
@@ -64,5 +64,5 @@ The OpenShift Ansible playbook does take a while to run when using VMs backed by
 Be sure to follow the OpenShift instructions to create the ncessary DNS entry for the OpenShift Router for access to applications.
 
 ### Additional OpenShift Configuration Options
- 
+
 You can configure additional settings per the official [OpenShift Origin Documentation](https://docs.openshift.org/latest/welcome/index.html).
